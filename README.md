@@ -9,6 +9,7 @@
  > List API: <br/>
  POST /api/auth/signup	signup new account<br/>
  POST	/api/auth/signin	login an account<br/>
+ POST	/api/auth/refreshtoken	renew access token with refresh token<br/>
  GET	/api/test/all	retrieve public content<br/>
  GET	/api/test/user	access User’s content<br/>
  GET	/api/test/admin	access Admin’s content<br/>
