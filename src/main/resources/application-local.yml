@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo_srv
+    username: root
+    password: datnv27
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8888
+
+#JWT auth properties   
+app:
+  jwt:
+    # This token must be encoded using Base64 and be at least 256 bits long
+    jwtSecret: YWQzOWRjYWEzNzg4MzBkN2JkMjJmZjY0YTE3MmRhN2U4OWRmMjUxMWQ1MTQyZDEzMTBhMTVhYjZmNmZiOWZlMTkwODdjODY3NDE0MzkwZmVlMzNkYTZlMWFlZDZmMmNmOTZlMDEwY2YyOWZmOWU4MGNmNDM1ZjMyNGVmYzg5YjY
+    #jwtExpirationMs: 3600000 #1 hours
+    #jwtRefreshExpirationMs: 86400000 # 24hours
+  ## For test
+    jwtExpirationMs: 60000 #1 minus
+    jwtRefreshExpirationMs: 120000 #2 minus
