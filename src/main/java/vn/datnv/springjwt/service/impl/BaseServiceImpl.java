@@ -56,10 +56,7 @@ public class BaseServiceImpl<E extends BaseEntity, ID extends Serializable, R ex
         return repository.findAll(spec, page);
     }
 
-	@Override
-	public List<E> findAll(Specification<E> spec) {
- 		return repository.findAll(spec);
-	}
+
 
 
 }

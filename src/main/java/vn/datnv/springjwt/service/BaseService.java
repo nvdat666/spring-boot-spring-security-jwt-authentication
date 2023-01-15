@@ -8,7 +8,6 @@ import vn.datnv.springjwt.entity.BaseEntity;
 
 import java.io.Serializable;
 import java.util.List;
-import java.util.Objects;
 import java.util.Optional;
 
 public interface BaseService<E extends BaseEntity, ID extends Serializable> {
@@ -26,21 +25,5 @@ public interface BaseService<E extends BaseEntity, ID extends Serializable> {
 
     Page<E> findAll(@Nullable Specification<E> spec, Pageable page);
 
-    default Specification<E> undeletedSpec() {
-        return (root, query, criteriaBuilder) -> criteriaBuilder.equal(root.get("deleted"), false);
-    }
-
-
-    default String searchLikeKeyword(String searchKey) {
-        Objects.requireNonNull(searchKey);
-        return "%" + searchKey + "%";
-    }
-
-    default String searchLikeLowercaseKeyword(String searchKey) {
-        Objects.requireNonNull(searchKey);
-        return "%" + searchKey.toLowerCase() + "%";
-    }
-
-    List<E> findAll(Specification<E> spec);
 
 }
