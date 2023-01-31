@@ -14,4 +14,5 @@
  GET	/api/test/user	access User’s content<br/>
  GET	/api/test/admin	access Admin’s content<br/>
 
-![](/spring-boot-refresh-token-jwt-example-flow.png)
+![](/spring-boot-refresh-token-jwt-example-flow.png) <br/>
+@author nvdat666@gmail.com
