@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>vn.datnv</groupId>
-    <artifactId>demo-srv</artifactId>
+    <artifactId>srv</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>demo-srv</name>
     <description>demo-srv</description>
